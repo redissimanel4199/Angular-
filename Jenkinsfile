@@ -68,7 +68,7 @@ pipeline {
 	 stage('Docker-compose') {
             steps {
                 echo 'Running docker-compose...';
-                sh """ docker-compose up -d -y """;
+                sh """ docker-compose up -d  --force-recreate """;
                sh """ docker-compose ps """;
             }
         }
