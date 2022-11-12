@@ -11,7 +11,7 @@ pipeline {
     }		
 
     stages {
-        stage('Checkoutt GIT') {
+        stage('Checkout GIT') {
             steps {
 
                 echo 'Pulling...';
