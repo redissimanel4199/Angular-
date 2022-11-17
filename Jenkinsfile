@@ -10,6 +10,7 @@ pipeline {
 	dockerImage = '' 
     }		
 
+  
     stages {
         stage('Checkout GIT') {
             steps {
